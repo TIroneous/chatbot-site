@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>n8n Chatbot</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    window.addEventListener('DOMContentLoaded', () => {
+      createChat({
+        webhookUrl: 'https://marinai.app.n8n.cloud/webhook/a7fc418b-d112-44b6-9152-4579bcdcf00d/chat'
+      });
+    });
+  </script>
+</body>
+</html>
