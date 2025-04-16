@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>n8n Chatbot</title>
-  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompt Engineer Chatbot</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .frame-wrapper {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <script type="module">
-    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-    window.addEventListener('DOMContentLoaded', () => {
-      createChat({
-        webhookUrl: 'https://marinai.app.n8n.cloud/webhook/a7fc418b-d112-44b6-9152-4579bcdcf00d/chat'
-      });
-    });
-  </script>
+  <h1 style="padding-top: 40px;">Welcome to the Prompt Engineer Chatbot 💬</h1>
+  <p>Ask about n8n, AI agents, prompt stacks, or anything automation!</p>
+
+  <iframe
+    class="frame-wrapper"
+    src="https://marinai.app.n8n.cloud/webhook/a7fc418b-d112-44b6-9152-4579bcdf00d/chat"
+    frameborder="0"
+    allow="microphone; camera"
+  ></iframe>
 </body>
 </html>
